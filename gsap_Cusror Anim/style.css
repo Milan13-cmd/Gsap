@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+}
+
+#cursor{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position: fixed;
+    font-size: 5px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+}
+
+#image{
+    position: relative;
+    height: 40vw;
+    width: 70vw;
+    background-color: lightslategray;
+
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 10;
+}
+
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
